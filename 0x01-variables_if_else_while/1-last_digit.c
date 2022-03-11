@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - main block
+ * main - Entry point
  *
  * Description: Get a random number and print the number
  * and if it is greater than 5, zero or less than 5 and not zero
