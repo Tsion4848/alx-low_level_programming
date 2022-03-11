@@ -3,8 +3,9 @@
 #include <stdio.h>
 /*
  * main - main block
+ *
  * Description: Get a random number and print the number
- * if it is greater than 5, zero or less than 5 and not zero
+ * and if it is greater than 5, zero or less than 5 and not zero
  * Return: 0
  */
 int main(void)
@@ -22,7 +23,7 @@ int main(void)
 	else if (last == 0)
 		printf("%s %d is %d and is 0\n", str, n, last);
 	else if (last < 6)
-		printf("%s %d is %d and is less than 6 and not 0\n",str, n, last);
+		printf("%s %d is %d and is less than 6 and not 0\n", str, n, last);
 
 	return (0);
 }
