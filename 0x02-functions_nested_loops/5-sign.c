@@ -1,9 +1,9 @@
+#include &amp;amp;lt;unistd.h&amp;amp;gt;
 /**
  * print_sign - Determines whether an integer is positive, negative or zero.
  * @n: the number to be checked
  * Return: 1 if positive, -1 if negative, 0 if zero, / if not a digit
  */
-int print_sign(int);
 
 int print_sign(int n)
 {
@@ -28,4 +28,4 @@ int print_sign(int n)
 		return ('/');
 	}
 }
-
+int print_sign(int);
