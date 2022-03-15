@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * _isalpha - tests whether a character is from english alphabet.
- * @c: character to be checked.
- * Return: 1 if the character is an English character.
+ * _isalpha - tests if a character is from english alphabet
+ * or not
+ * Return: 1 if the character is an english alphabet.
  */
 int _isalpha(int c)
 {
