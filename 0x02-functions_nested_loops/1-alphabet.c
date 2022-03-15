@@ -1,17 +1,10 @@
 #include <stdio.h>
 /**
- * main - printing alphabets in lower case
- * Return: 0 on success
+ * print_alphabet - printing alphabets in lower case
+ * Return: nothing.
  */
-void print_alphabet(void);
 
-int main(void)
-{
-	
-	return (0);
-}
-
-void print_alphabet()
+void print_alphabet(void)
 {
 	int i;
 	for (i = 'a' ; i <= 'z' ; i++)
