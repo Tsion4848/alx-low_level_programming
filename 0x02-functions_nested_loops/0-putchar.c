@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <main.h>
 /**
  * main - prints _putchar from a character arrey
  * Return: 0 on success.
