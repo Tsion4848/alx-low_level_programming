@@ -2,5 +2,5 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int);
 int _isalpha(int);
-#include "stdio.h"
-int print_sign(int n);
+int print_sign(int);
+int _abs(int);
