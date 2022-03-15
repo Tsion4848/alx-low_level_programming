@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * print_sign - Determines whether an integer is positive, negative or zero.
