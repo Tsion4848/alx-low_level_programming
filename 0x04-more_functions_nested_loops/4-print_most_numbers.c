@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_most_numbers - prints the numbers interleaved
- *
- * Return: numbers
+ * print_most_numbers - Print numbers 0 to 9, excluding 2 and 4.
+ * Description: Can only use _putchar twice.
  */
 void print_most_numbers(void)
 {
-	int numb;
+	int i;
 
-	for (numb = 48 ; numb <= 57 ; numb++)
+	i = 0;
+	while (i < 10)
 	{
-		if (numb != 50 && numb != 52)
-		{
-			_putchar(numb);
-		}
+		if (i != 2 && i != 4)
+			_putchar(i + '0');
+
+		i++;
 	}
 	_putchar('\n');
 }
