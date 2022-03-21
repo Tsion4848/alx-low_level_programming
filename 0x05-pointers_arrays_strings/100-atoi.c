@@ -7,7 +7,7 @@
 int _atoi(char *s)
 {
 	short b;
-	int i, m, res;
+	int i, min, res;
 
 	i = min = res = b = 0;
 	min = -1;
