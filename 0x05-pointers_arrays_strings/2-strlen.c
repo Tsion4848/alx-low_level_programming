@@ -4,11 +4,13 @@
  * _strlen - returns the length of a string
  * @s - stores the string
  *
+ * Return: the length of the string
  */
 int _strlen(char *s)
 {
 	int len;
 
-	len = *s.strlen();
+	for (len = 0 ; s[len] != '\0' ; i++)
+		;
 	return(len);
 }
