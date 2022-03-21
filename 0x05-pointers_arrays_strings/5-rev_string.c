@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - reversing a string
- * @s: the string
+ * @s: holi
  *
  */
 void rev_string(char *s)
@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int temp;
 	int len;
 
-	while(s[a] != 0)
+	while (s[a] != 0)
 	{
 		a++;
 	}
@@ -20,7 +20,7 @@ void rev_string(char *s)
 	a = 0;
 	b = len - 1;
 
-	while(a < b)
+	while (a < b)
 	{
 		temp = s[a];
 		s[a] = s[b];
