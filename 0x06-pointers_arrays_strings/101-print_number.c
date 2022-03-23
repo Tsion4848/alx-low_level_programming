@@ -4,26 +4,18 @@
  * @n: the integer
  *
  */
-void print_number(int n)
+void print_number(int)
 {
-	int i;
-	int rem;
+	unsigned int i = n;
 
-	while (n < 10)
+	if (n < 0)
 	{
-		_putchar(n);
+		_putchar(45);
+		i = -i;
 	}
-
-	i = 0;
-	rem = 0;
-
-	while (n > 10)
+	if (i / 10)
 	{
-		i = n / 10;
-		rem = n % 10;
-		n = n / 10;
-
-		_putchar(i);
+		print_number(i / 10);
 	}
-	_putchar(rem);
+	_putchar(i % 10 + '0');
 }
