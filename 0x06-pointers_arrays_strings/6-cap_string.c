@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		{
 			str[a] = str[a] - 32;
 		}
-		lett = 0;
+		b = 0;
 
 		while (lett[b] != '\0')
 		{
