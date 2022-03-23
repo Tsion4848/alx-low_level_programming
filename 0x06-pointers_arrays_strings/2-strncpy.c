@@ -6,24 +6,18 @@
  * @src: input parameter string
  * @n: the number of characters
  *
- * Return: dest
+ * Return: destination
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
-	
-	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dest[i] = src[i];
-		i++;
-	}
+	char *ret = dest;
 
-	i = i;
-	while (i < n)
+	while (*src && n)
 	{
-		dest[i] = '\0';
-		i++;
+		*dest++ = *src++;
+		n--;
 	}
-	return (dest);
+	while (n--)
+		*dest++ = '\0';
+	return (ret);
 }
