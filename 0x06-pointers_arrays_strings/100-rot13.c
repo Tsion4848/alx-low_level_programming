@@ -6,7 +6,7 @@
  *
  * Return: the encoded character
  */
-char *rot13(char *)
+char *rot13(char *str)
 {
 	int i, j;
 
