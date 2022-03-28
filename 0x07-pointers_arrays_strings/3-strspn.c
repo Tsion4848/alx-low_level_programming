@@ -23,9 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 			j++;
 		}
 		j = 0;
-
 		i++;
-		
 		if (s[i] == ' ')
 		{
 			break;
