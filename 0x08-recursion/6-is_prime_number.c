@@ -14,7 +14,7 @@ int prime_found(int i, int j)
 		{
 			return (1);
 		}
-		else if (j % i == 0 ||j <= 1)
+		else if (j % i == 0 || j <= 1)
 		{
 			return (0);
 		}
