@@ -19,10 +19,10 @@ int main(int argc, char **argv)
 
 	c = atoi(argv[1]);
 
-	for (tot = 0 ; tot > 0 ; tot++)
+	for (tot = 0 ; c > 0 ; tot++)
 	{
 		if (c - 25 >= 0)
-			change = change - 25;
+			c = c - 25;
 		else if (c - 10 >= 0)
 			c = c - 10;
 		else if (c -5 > 0)
