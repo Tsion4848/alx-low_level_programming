@@ -13,10 +13,6 @@ int main(int argc, char *argv[])
 	int i, j, sum;
 	
 	sum = 0;
-	
-	if (argc == 1){
-		printf("%s\n", 0);
-	}
 
 	for (i = 1 ; i < argc ; i++)
 	{
