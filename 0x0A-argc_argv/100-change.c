@@ -25,12 +25,12 @@ int main(int argc, char **argv)
 			c = c - 25;
 		else if (c - 10 >= 0)
 			c = c - 10;
-		else if (c -5 > 0)
+		else if (c - 5 > 0)
 			c = c - 5;
 		else if (c - 2 >=0)
 			c = c - 2;
 		else if (c - 1 >= 0)
-			c = c-1;
+			c = c - 1;
 	}
 	printf("%d\n", tot);
 	return (0);
