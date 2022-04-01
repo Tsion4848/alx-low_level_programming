@@ -5,6 +5,7 @@
  * main - function to print out the change that needs to given
  * @argc: number of arguments to be passed
  * @argv: number of variables to calculate
+ *
  * Return: always 0 for sucess
  */
 int main(int argc, char **argv)
@@ -27,7 +28,7 @@ int main(int argc, char **argv)
 			c = c - 10;
 		else if (c - 5 > 0)
 			c = c - 5;
-		else if (c - 2 >=0)
+		else if (c - 2 >= 0)
 			c = c - 2;
 		else if (c - 1 >= 0)
 			c = c - 1;
