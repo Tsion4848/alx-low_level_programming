@@ -7,12 +7,15 @@
  */
 char *_strdup(char *str)
 {
-	if (str == '\0')
+	int n;
+	n = sizeof(str)/sizeof(char);
+
+	if (n == 0)
 	{
 		return (0);
 	}
-	int *arr;
-	arr = (int*)malloc(sizeof(str) * sizeof(char));
+	char *arr;
+	arr = (int*)malloc(n * sizeof(char));
 
 	int i;
 	for (i = 0 ; i < sizeof(arr) ; i++)
