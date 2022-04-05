@@ -58,11 +58,11 @@ char *str_concat(char *s1, char *s2)
 	int length;
 	char *space;
 
-	if (s1 == '\0')
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == '\0')
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
@@ -72,7 +72,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		space = malloc(sizeof(char) * length + 1);
 
-		if (space == '\0')
+		if (space == NULL)
 		{
 			return ('\0');
 		}
