@@ -1,4 +1,4 @@
-#includem "main.h"
+#include "main.h"
 /**
  * _strlen - allocates a space in memory
  * @s: our string
