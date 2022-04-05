@@ -20,19 +20,19 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		arr = malloc(sizeof(char) * size);
-		if (*arr == '\0')
-		{
-			return ('\0');
-		}
-		else
-		{
-			while(n < size)
+		arr = (char *)malloc(sizeof(char) * size);
+			if (arr == NULL)
 			{
-				arr[n] = c;
-				n++;
+				return ('\0');
 			}
-		}
+			else
+			{
+				while(n < size)
+				{
+					arr[n] = c;
+					n++;
+				}
+			}
 		return (arr);
 	}
 }
