@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0 ; s[i] != '\0 ; i++)
+	for (i = 0 ; s[i] != '\0' ; i++)
 		;
 	return (i);
 }
@@ -36,17 +36,17 @@ char *_strdup(char *str)
 	n = _strlen(str);
 	arr = malloc(n * sizeof(char) + 1);
 	
-	if(arr == '\0')
+	if (arr == NULL)
 	{
 		return ('\0');
 	}
 	else
 	{
-		for (i = 0 ; str[i] != '\0' ; i++)
+		for (n = 0 ; str[n] != '\0' ; n++)
 		{
-			arr[i] = str[i];
+			arr[n] = str[n];
 		}
 	}
-	arr[i] = '\0';
+	arr[n] = '\0';
 	return (arr);
 }
