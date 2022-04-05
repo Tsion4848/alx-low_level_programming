@@ -10,7 +10,7 @@ char *str_concat(char *s1, char *s2)
 	int n;
 	n = (sizeof(s1) + sizeof(s2))/sizeof(char);
 
-	char *arr;
+	int *arr;
 
 	arr = (int*)malloc(n * sizeof(char) + 1);
 
