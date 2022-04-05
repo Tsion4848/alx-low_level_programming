@@ -28,7 +28,6 @@ char *_strdup(char *str)
 {
 	int n;
 	char *arr;
-	
 	if (str == NULL)
 	{
 		return ('\0');
