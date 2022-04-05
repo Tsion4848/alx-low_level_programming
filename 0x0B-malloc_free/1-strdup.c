@@ -28,13 +28,13 @@ char *_strdup(char *str)
 {
 	int n;
 	char *arr;
+	
 	if (str == NULL)
 	{
 		return ('\0');
 	}
 	n = _strlen(str);
 	arr = malloc(n * sizeof(char) + 1);
-	
 	if (arr == NULL)
 	{
 		return ('\0');
