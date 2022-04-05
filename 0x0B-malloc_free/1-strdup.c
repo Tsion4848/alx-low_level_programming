@@ -26,26 +26,26 @@ int _strlen(char *s)
  */
 char *_strdup(char *str)
 {
-	int n;
-	char *arr;
-	
-	if (str == NULL)
+	int i;
+	char *copy;
+
+	if (str == '\0')
 	{
 		return ('\0');
 	}
-	n = _strlen(str);
-	arr = malloc(n * sizeof(char) + 1);
-	if (arr == NULL)
+	i = _strlen(str);
+	copy = malloc(sizeof(char) * i + 1);
+	if (copy == '\0')
 	{
 		return ('\0');
 	}
 	else
 	{
-		for (n = 0 ; str[n] != '\0' ; n++)
+		for (i = 0 ; str[i] != '\0' ; i++)
 		{
-			arr[n] = str[n];
+			copy[i] = str[i];
 		}
 	}
-	arr[n] = '\0';
-	return (arr);
+	copy[i] = '\0';
+	return (copy);
 }
