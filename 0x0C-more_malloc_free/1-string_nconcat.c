@@ -28,8 +28,7 @@ unsigned int _length(char *str){
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	int i, j;
-	int l1, l2;
+	unsigned int i, j, l1, l2;
 
 	if (s2 == NULL)
 	{
@@ -39,6 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 == "";
 	}
+	
 	l1 = _length(s1);
 	l2 = length(l2);
 
@@ -53,14 +53,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	 for (i = 0 ; i < l1 ; i++)
-	 {
+	for (i = 0 ; i < l1 ; i++)
+	{
 		 p[i] = s1[i];
-	 }
-	 for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
-	 {
-		 p[i] = s2[j];
-	 }
-	 p[i] = '\0';
-	 return (p);
+	}
+	for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
+	{
+	 p[i] = s2[j];
+	}
+
+	p[i] = '\0';
+	return (p);
 }
