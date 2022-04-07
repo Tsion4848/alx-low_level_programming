@@ -2,14 +2,14 @@
 #include <stdlib.h>
 /**
  * array_range - creates an array of integers
- * @min: minimal state
- * @max: maximal state
+ * @min: minimum value
+ * @max: maximum value
  *
- * Return: array of integers
+ * Return: the pointer to the newly created array
  */
 int *array_range(int min, int max)
 {
-	int *arr;
+	int *array;
 	int i;
 
 	if (min > max)
@@ -17,16 +17,16 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	arr = malloc(sizeof(int) * (max - min + 1));
-	
-	if (arr == NULL)
+	array = malloc(sizeof(int) * (max - min + 1));
+
+	if (array == NULL)
 	{
 		return (NULL);
 	}
 
 	for (i = 0 ; min <= max ; min++, i++)
 	{
-		arr[i] = min;
+		array[i] = min;
 	}
-	return (arr);
+	return (array);
 }
