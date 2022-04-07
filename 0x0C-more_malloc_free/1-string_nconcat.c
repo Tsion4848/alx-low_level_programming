@@ -1,67 +1,62 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _length - length of a string
- * @str: the string
+ * _strlen - give the length of a string
+ * @s: the string
  *
- * Return: the length
+ * Return: the length of a string
  */
-unsigned int _length(char *str){
-	
+unsigned int _strlen(char *s)
+{
 	unsigned int i;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
-	{
+	for (i = 0 ; s[i] != '\0' ; i++)
 		;
-	}
 	return (i);
 }
 
 /**
- * string_nconcat - concatenates 2 strings
- * @s1: parameter
- * @s2: parameter
- * @n: length
+ * string_nconcat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * @n: bytes of s2
  *
- * Return: the concatenated string
+ * Return: a pointer with the content of s1 followed by n byte of s2
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int i, j, l1, l2;
+	unsigned int length1, length2, i, j;
+	char *space;
 
-	if (s2 == NULL)
-	{
-		s2 == "";
-	}
 	if (s1 == NULL)
 	{
-		s1 == "";
+		s1 = "";
 	}
-	
-	l1 = _length(s1);
-	l2 = length(l2);
-
-	if (n >= l2)
+	if (s2 == NULL)
 	{
-		n = l2;
+		s2 = "";
 	}
 
-	p = malloc(sizeof(char) * (l1 + n + 1));
+	length1 = _strlen(s1);
+	length2 = _strlen(s2);
 
-	 if (p == NULL)
+	if (n >= length2)
+	{
+		n = length2;
+	}
+
+	space = malloc(sizeof(char) * (n + length1 + 1));
+
+	if (space == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0 ; i < l1 ; i++)
-	{
-		 p[i] = s1[i];
-	}
-	for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
-	{
-	 p[i] = s2[j];
-	}
 
-	p[i] = '\0';
-	return (p);
+	for (i = 0 ; i < length1 ; i++)
+		space[i] = s1[i];
+	for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
+		space[i] = s2[j];
+
+	space[i] = '\0';
+	return (space);
 }
