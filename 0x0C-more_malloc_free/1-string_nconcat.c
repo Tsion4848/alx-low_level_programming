@@ -31,19 +31,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p;
 	int i, j;
 
-	if (*s2 == NULL)
+	if (s2 == NULL)
 	{
-		*s2 == "";
+		s2 == "";
 	}
-	if (*s1 == NULL)
+	if (s1 == NULL)
 	{
-		*s1 == "";
+		s1 == "";
 	}
 
-	if (n >= _length(*s2))
+	if (n >= _length(s2))
 	{
 		n = _length(s2);
 	}
+
 	p = malloc(sizeof(char) * (_length(s1) + n + 1));
 
 	 if (p == NULL)
