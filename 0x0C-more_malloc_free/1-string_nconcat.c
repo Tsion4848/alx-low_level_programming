@@ -6,12 +6,12 @@
  *
  * Return: the length
  */
-int _length(char *str){
+unsigned int _length(char *str){
 	
 	int i;
 	int count;
 
-	for (i == 0 ; str[i] != '\0' ; i++)
+	for (i = 0 ; str[i] != '\0' ; i++)
 	{
 		count++;
 	}
@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	 for (i == 0 ; i < _length(s1) ; i++)
+	 for (i = 0 ; i < _length(s1) ; i++)
 	 {
 		 p[i] = s1[i];
 	 }
