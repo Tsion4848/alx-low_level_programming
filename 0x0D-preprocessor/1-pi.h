@@ -1,1 +1,4 @@
-#define PI (22 / 7.0)
+#ifndef file
+#define file
+#define PI 3.14159265359
+#endif
