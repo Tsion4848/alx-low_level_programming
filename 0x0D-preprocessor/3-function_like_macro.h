@@ -1,9 +1,5 @@
 #ifndef file
 #define file
-
-#if x >= 0
-#define ABS(x) X
-#elif x < 0
-#define ABS(X) (-X)
+#define ABS(x) (((x) < 0) ? (-1) * (x) : (x));
 #endif
 
