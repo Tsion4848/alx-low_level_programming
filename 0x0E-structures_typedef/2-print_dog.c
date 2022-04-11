@@ -4,7 +4,6 @@
  * print_dog - prints the dog structure
  * @d: the dog instance
  *
- * Return: Always 0
  *
  */
 void print_dog(struct dog *d)
