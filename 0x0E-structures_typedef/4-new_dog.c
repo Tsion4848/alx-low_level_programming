@@ -6,7 +6,7 @@
  * @age: age
  * @owner: owner
  *
- * Return: dog_t type
+ * Return: pointer to the new structure
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i, n_name, n_owner;
 
 	n_dog = malloc(sizeof(dog_t));
-	if (n_dog == NULL || ! name || !owner)
+	if (n_dog == NULL || !name || !owner)
 	{
 		free(n_dog);
 		return (NULL);
