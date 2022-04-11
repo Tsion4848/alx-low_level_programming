@@ -6,10 +6,8 @@
  * @age: age of the dog
  * @owner: owner of the dog
  *
- * Description: this describes the name, age, and owner of a dog
- * it does so by creating a structure
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
