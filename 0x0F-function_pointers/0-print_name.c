@@ -2,14 +2,14 @@
 #include <stdlib.h>
 /**
  * print_name - prints a name
- * @name: name of the person
+ * @name: the string
  * @f: the function pointer
  *
- * Return: always 0
+ * Return: function to pointer to print name
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if(f){
+	if (f){
 		f(name);
 	}
 }
