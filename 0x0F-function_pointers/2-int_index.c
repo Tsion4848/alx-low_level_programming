@@ -5,14 +5,16 @@
  * @size: size of the array
  * @cmp: the function pointer
  *
- * Return - index of the first element
+ * Return: index of the first element
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (size <= 0)
+	if (size <= 0 || cmp == NULL || array == NULL)
+	{
 		return (-1);
+	}
 
 	for(i = 0 ; i < size ; i++)
 	{
