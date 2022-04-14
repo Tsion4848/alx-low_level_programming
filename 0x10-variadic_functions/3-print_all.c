@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_char - print characters
- * @arguments: input arguments
+ * @ap: input arguments
  */
 void print_char(va_list ap)
 {
