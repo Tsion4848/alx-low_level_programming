@@ -7,9 +7,9 @@
  */
 size_t print_list(const list_t *h)
 {
-	int count = 0;
+	int numb_node = 0;
 
-	while (h != NULL)
+	while (h != '\0')
 	{
 		if (h->str != NULL)
 		{
@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 			printf("[0] %p\n", h->str);
 		}
 		h = h->next;
-		count++;
+		numb_node++;
 	}
-	return (count);
+	return (numb_node);
 }
