@@ -1,20 +1,14 @@
-#build an executable name school from main.c and school.c
 CC = gcc
-SRC = main.c school.c
+SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
-NAME = school
+NAME = holberton
 RM = rm -f
-CFLAGS = -wall -werror -wextra -pedantic
-
+CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
+	$(CC) $(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
-
 oclean:
 	$(RM) $(OBJ)
-
 fclean: clean oclean
-
-re: fclean all
+re: oclean all
